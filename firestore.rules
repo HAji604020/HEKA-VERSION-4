@@ -1,0 +1,69 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Default-deny catch-all
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function isPlatformAdmin() {
+      return isSignedIn() && exists(/databases/$(database)/documents/platform_admins/$(request.auth.uid));
+    }
+
+    function isCompanyMember(companyId) {
+      return isSignedIn() && (
+        isPlatformAdmin() ||
+        exists(/databases/$(database)/documents/companies/$(companyId)/members/$(request.auth.uid))
+      );
+    }
+
+    function isCompanyAdmin(companyId) {
+      return isSignedIn() && (
+        isPlatformAdmin() ||
+        get(/databases/$(database)/documents/companies/$(companyId)/members/$(request.auth.uid)).data.role == 'company_admin'
+      );
+    }
+
+    // Company Tenant Profile
+    match /companies/{companyId} {
+      allow get: if isValidId(companyId);
+      allow list: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if isCompanyAdmin(companyId);
+      allow delete: if isPlatformAdmin();
+
+      // Company Members Subcollection
+      match /members/{memberId} {
+        allow read: if isCompanyMember(companyId);
+        allow write: if isCompanyAdmin(companyId);
+      }
+
+      // Products Subcollection: Mathematically isolates tenant products!
+      match /products/{productId} {
+        // Public visitors can only view published products!
+        allow get: if isValidId(productId) && (resource.data.isPublished == true || isCompanyMember(companyId));
+        allow list: if (resource.data.isPublished == true) || isCompanyMember(companyId);
+
+        // Mutations strictly restricted to authorized company members
+        allow create, update, delete: if isCompanyMember(companyId);
+      }
+
+      // Inquiries Subcollection
+      match /inquiries/{inquiryId} {
+        // Public visitors can submit inquiries
+        allow create: if isValidId(inquiryId);
+        // Only company staff can read and manage customer inquiries!
+        allow read, update, delete: if isCompanyMember(companyId);
+      }
+    }
+  }
+}

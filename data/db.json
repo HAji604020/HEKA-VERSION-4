@@ -1,0 +1,1350 @@
+{
+  "companies": [
+    {
+      "id": "comp_heka_ltd",
+      "slug": "heka-ltd",
+      "name": "HEKA LTD",
+      "industry": "International Trade & Premium Distribution",
+      "country": "United Kingdom / Global",
+      "currency": "USD",
+      "logoUrl": "/heka-logo.jpg",
+      "bannerUrl": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&auto=format&fit=crop&q=80",
+      "brandColors": {
+        "primary": "#101C35",
+        "accent": "#C9A96E",
+        "background": "#F5F7FA"
+      },
+      "contactPhone": "+44 20 7946 0991",
+      "contactEmail": "contact@hekaltd.com",
+      "address": "100 Bishopsgate, London EC2N 4AG, United Kingdom",
+      "plan": "enterprise",
+      "settings": {
+        "showRetailPricesPublicly": true,
+        "allowWholesaleQuoteRequests": true,
+        "supportedLanguages": [
+          "en",
+          "fa"
+        ],
+        "defaultLanguage": "en",
+        "customGreetingEn": "Welcome to HEKA LTD. High-grade commercial supply, wholesale distribution, and verified customer service.",
+        "customGreetingFa": "به درگاه رسمی شرکت تجارتی و توزیع بین‌المللی HEKA LTD خوش آمدید.",
+        "notificationDestinations": {
+          "email": "khanedriss5951@gmail.com",
+          "whatsappRaw": "0093728224060",
+          "whatsappNormalized": "+93728224060",
+          "telegramPublicLink": "https://t.me/HEKA_480",
+          "telegramChatId": "",
+          "enabledChannels": {
+            "email": true,
+            "telegram": true,
+            "whatsapp": true
+          }
+        }
+      },
+      "createdAt": "2026-01-10T08:00:00Z"
+    },
+    {
+      "id": "comp_ziba_fashion",
+      "slug": "ziba-fashion",
+      "name": "HAJI",
+      "industry": "Textile & Traditional Fashion",
+      "country": "Afghanistan",
+      "currency": "AFN",
+      "logoUrl": "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=128&auto=format&fit=crop&q=80",
+      "bannerUrl": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1200&auto=format&fit=crop&q=80",
+      "brandColors": {
+        "primary": "#0f766e",
+        "accent": "#4f46e5",
+        "background": "#f8fafc"
+      },
+      "contactPhone": "0093728224060",
+      "contactEmail": "tradeheka01@gmail.com",
+      "address": "Zarghoona Plaza, Shahr-e Naw, Kabul, Afghanistan",
+      "plan": "starter",
+      "settings": {
+        "showRetailPricesPublicly": true,
+        "allowWholesaleQuoteRequests": true,
+        "supportedLanguages": [
+          "fa",
+          "en"
+        ],
+        "defaultLanguage": "fa",
+        "customGreetingEn": "Ziba Silk: Handwoven Afghan silk, traditional chapans, and embroidered dresses.",
+        "customGreetingFa": "زیبا فشن: البسه دست‌دوز، چپن‌های ابریشمی و پیراهن‌های سنتی هرات و کابل."
+      },
+      "createdAt": "2026-02-15T10:00:00Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "user_owner",
+      "email": "owner@dukanai.com",
+      "name": "Platform Administrator",
+      "role": "platform_owner",
+      "companyId": null,
+      "token": "token_owner_secret",
+      "passwordHash": "scrypt$06d9e23bb53e02157d513e279cae554d$2ef684d8e2b336f26643a1de701879fe8a686fb8555bbdd17ad4d9b74ffc9077350558e35302973feee9435e28312023194b4e49023f8a9ca5c7351ce10e2675"
+    },
+    {
+      "id": "user_heka_admin",
+      "email": "admin@hekaltd.com",
+      "name": "HEKA Corporate Director",
+      "role": "company_admin",
+      "companyId": "comp_heka_ltd",
+      "token": "token_heka_admin_secret",
+      "passwordHash": "scrypt$e88d9ca107fe2c2f1c32c1a5b14f96d5$b59ce276a3276d829d1096735193b37ced2a8eb69d77d670e9194bbc9b7d5e5a30f116e8016727a99b821f387b0a527026fc009e425ab3b1caf58db64aa3c313"
+    },
+    {
+      "id": "user_ziba_admin",
+      "email": "admin@zibafashion.com",
+      "name": "Ziba Samimi (Founder)",
+      "role": "company_admin",
+      "companyId": "comp_ziba_fashion",
+      "token": "token_ziba_admin_secret",
+      "passwordHash": "scrypt$a390aad5d34d749ed9141515935ed177$06d55aec358f2cad1b79b91dbc0d15bd12f5675502c36356016e0899e64087c914b1fd359c664f5e629fa3a53903b630658008505f41783fa426d4cd30554caa"
+    },
+    {
+      "id": "user_ziba_staff",
+      "email": "sales@zibafashion.com",
+      "name": "Ahmad Reshad (Sales Staff)",
+      "role": "company_staff",
+      "companyId": "comp_ziba_fashion",
+      "token": "token_ziba_staff_secret",
+      "passwordHash": "scrypt$f922cfdee62d0d62284bceb2f2bf4942$f359e288da58736e7842880e2573499c01e9e2dc7af88f68d9c04c8a3fe11f8eff60bc8ddc32e58c611812dc8b4912244ddc8f12d4ec239fd974739745900231"
+    },
+    {
+      "id": "user_sarah_buyer",
+      "email": "sarah.jenkins@gmail.com",
+      "name": "Sarah Jenkins",
+      "role": "customer",
+      "companyId": null,
+      "token": "token_sarah_buyer",
+      "accountType": "personal",
+      "personalProfile": {
+        "fullName": "Sarah Jenkins",
+        "country": "United Kingdom",
+        "city": "London",
+        "phone": "+44 7700 900123"
+      },
+      "sellerStatus": "none",
+      "preferredLanguage": "en",
+      "savedProductIds": [
+        "prod_heka_1"
+      ],
+      "phone": "+44 7700 900123",
+      "country": "United Kingdom",
+      "city": "London",
+      "createdAt": "2026-02-01T08:00:00Z",
+      "passwordHash": "scrypt$e867c745d0cdc9509d59cba25ddb950c$7d5c76ed99768ed5a8c969e11a4893b76b7d9c30a52e21ca4d9a6a83b8d8260fd0ff534f8df9bb68d9172a547372acdebcb41e3849ff45782bc62f015c086670"
+    },
+    {
+      "id": "user_marcus_buyer",
+      "email": "marcus.sterling@auraglobal.co.uk",
+      "name": "Marcus Sterling",
+      "role": "customer",
+      "companyId": null,
+      "token": "token_marcus_buyer",
+      "accountType": "business",
+      "businessProfile": {
+        "contactPerson": "Marcus Sterling",
+        "companyName": "Aura Global Trading UK",
+        "country": "United Kingdom",
+        "city": "London",
+        "businessEmail": "marcus.sterling@auraglobal.co.uk",
+        "businessPhone": "+44 20 7946 0888",
+        "businessType": "Wholesaler & Importer",
+        "registrationNumber": "UK-COMP-998241",
+        "website": "https://auraglobal.co.uk"
+      },
+      "sellerStatus": "none",
+      "preferredLanguage": "en",
+      "savedProductIds": [
+        "prod_heka_2"
+      ],
+      "phone": "+44 20 7946 0888",
+      "country": "United Kingdom",
+      "city": "London",
+      "createdAt": "2026-02-10T12:00:00Z",
+      "passwordHash": "scrypt$355f9184ecba24fd31c04ca02be7208c$257ba52203467eb24de9d6c2fd9094bf568e15df3fcda627234fe1b90de44b8c43c810143ae5e19bf2858685ba9a2fd6344d53306f1bf6f3bb1ec9674ad13ebd"
+    },
+    {
+      "id": "user_zahir_seller",
+      "email": "kabul.crafts@afghantrade.com",
+      "name": "Mohammad Zahir",
+      "role": "customer",
+      "companyId": null,
+      "token": "token_zahir_seller",
+      "accountType": "business",
+      "businessProfile": {
+        "contactPerson": "Mohammad Zahir",
+        "companyName": "Kabul Artisan Handicrafts Co.",
+        "country": "Afghanistan",
+        "city": "Kabul",
+        "businessEmail": "kabul.crafts@afghantrade.com",
+        "businessPhone": "+93 700 123 456",
+        "businessType": "Manufacturer & Producer",
+        "registrationNumber": "AFG-MOC-7712"
+      },
+      "sellerStatus": "approved",
+      "preferredLanguage": "fa",
+      "savedProductIds": [
+        "prod_heka_1"
+      ],
+      "phone": "+93 700 123 456",
+      "country": "Afghanistan",
+      "city": "Kabul",
+      "createdAt": "2026-02-12T10:00:00Z",
+      "passwordHash": "scrypt$ee0a1341d0a3efcf25c4f19e9c515ee1$7e2bec0d413f204c63ee51eb0d8511d6658f53982602fe56821a91c00f00dfc5a568b5611e16fa0220c247d828f3b80ddcc65cddf1b169b96930ef7ba095a8b3"
+    },
+    {
+      "id": "user_farid_pending_seller",
+      "email": "herat.saffron.coop@heratfarms.af",
+      "name": "Ahmad Farid",
+      "role": "customer",
+      "companyId": null,
+      "token": "token_farid_pending_seller",
+      "accountType": "business",
+      "businessProfile": {
+        "contactPerson": "Ahmad Farid",
+        "companyName": "Herat Organic Agricultural Cooperative",
+        "country": "Afghanistan",
+        "city": "Herat",
+        "businessEmail": "herat.saffron.coop@heratfarms.af",
+        "businessPhone": "+93 799 456 789",
+        "businessType": "Agricultural Producer Cooperative",
+        "registrationNumber": "AFG-AGR-4409"
+      },
+      "sellerStatus": "pending",
+      "preferredLanguage": "fa",
+      "savedProductIds": [],
+      "phone": "+93 799 456 789",
+      "country": "Afghanistan",
+      "city": "Herat",
+      "createdAt": "2026-03-01T09:00:00Z",
+      "passwordHash": "scrypt$86f7dafdc642c0c6f9d0ed4ba6f2d0d9$3a979477a99c5378d608ffcccca05fdcafc151bbebec2ac24c3644c23c51f31cdfe1f8557a821859120589c8cc453b584eb661457a33dd831bd56fdde9a2543e"
+    }
+  ],
+  "products": [
+    {
+      "id": "prod_heka_1",
+      "companyId": "comp_heka_ltd",
+      "name": "HEKA Signature Reserve Luxury Gift Collection",
+      "nameFa": "بسته هدیه لوکس کلکسیون اختصاصی HEKA LTD",
+      "category": "Executive Gifts & Specialty Goods",
+      "description": "Handcrafted luxury executive presentation case featuring certified pure Grade 1 botanical extract, precision brass dispenser, and sealed airtight crystal containers.",
+      "descriptionFa": "جعبه هدیه لوکس و تشریفاتی ساخته شده با روکش مخمل، ظروف کریستال پلمپ شده با استاندارد بین‌المللی و گواهی اصالت آزمایشگاهی.",
+      "images": [
+        "/heka-logo.jpg",
+        "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=800&auto=format&fit=crop&q=80"
+      ],
+      "unit": "box",
+      "retailPrice": 48,
+      "currency": "$",
+      "stock": 50,
+      "packageSizes": [
+        {
+          "id": "size_standard",
+          "name": "Standard Executive Set",
+          "weightOrSize": "Standard Set",
+          "price": 48,
+          "stock": 35,
+          "isAvailable": true
+        },
+        {
+          "id": "size_deluxe",
+          "name": "Deluxe Grand Edition",
+          "weightOrSize": "Deluxe Grand",
+          "price": 95,
+          "stock": 15,
+          "isAvailable": true
+        }
+      ],
+      "attributes": [
+        {
+          "key": "Grade",
+          "value": "Premium Grade 1 Export Certified"
+        },
+        {
+          "key": "Origin",
+          "value": "Certified Verified Global Sourcing"
+        },
+        {
+          "key": "Packaging",
+          "value": "Airtight Sealed Crystal in Velvet Wood Chest"
+        }
+      ],
+      "wholesaleRules": {
+        "minQuantity": 10,
+        "discountPercent": 12,
+        "requireQuote": true,
+        "termsNote": "12% volume concession on orders of 20+ units. Bespoke corporate engraving provided on 50+ units.",
+        "termsNoteFa": "۱۲٪ تخفیف تجاری برای سفارش‌های بالای ۲۰ بسته. امکان سفارشی‌سازی برند شرکتی برای بالای ۵۰ عدد.",
+        "isConfirmed": true
+      },
+      "shippingDetails": {
+        "fee": "Free priority courier across UK & Europe; DHL Express worldwide dispatch quoted per destination.",
+        "transitTime": "24-48h domestic / EU, 3-5 business days global express",
+        "coverage": "UK, EU, Middle East, North America, Central Asia",
+        "isConfirmed": true
+      },
+      "qualityInfo": {
+        "grade": "Grade 1 ISO Certified",
+        "standard": "ISO 9001 / ISO 22000 Certified Batch",
+        "labReportNumber": "HEKA-QC-2026-778",
+        "isConfirmed": true,
+        "notes": "Purity, moisture tolerance, and full traceability verified."
+      },
+      "isPublished": true,
+      "isFeatured": true,
+      "createdAt": "2026-01-15T12:00:00Z",
+      "updatedAt": "2026-03-01T09:30:00Z",
+      "approvalStatus": "approved"
+    },
+    {
+      "id": "prod_heka_2",
+      "companyId": "comp_heka_ltd",
+      "name": "HEKA Industrial & Commercial Grade Supply (Bulk Canister)",
+      "nameFa": "محصول تجارتی فله و توزیع عمده HEKA LTD (کانتینر فلزی)",
+      "category": "Commercial Wholesale & Export",
+      "description": "Food & cosmetic-grade airtight nitrogen-flushed industrial containers engineered for international distributors, pharmaceutical formulators, and luxury hospitality chains.",
+      "descriptionFa": "کانتینر آلومینیومی ایزوله تحت گاز خنثی نیتروژن جهت حفظ بالاترین استانداردهای کیفی برای صادرات و توزیع‌کنندگان بین‌المللی.",
+      "images": [
+        "/heka-logo.jpg",
+        "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&auto=format&fit=crop&q=80"
+      ],
+      "unit": "canister",
+      "retailPrice": 1850,
+      "currency": "$",
+      "stock": 20,
+      "packageSizes": [
+        {
+          "id": "size_1kg",
+          "name": "1 KG Commercial Canister",
+          "weightOrSize": "1000g",
+          "price": 1850,
+          "stock": 15,
+          "isAvailable": true
+        },
+        {
+          "id": "size_5kg",
+          "name": "5 KG Master Cask",
+          "weightOrSize": "5000g",
+          "price": 8200,
+          "stock": 5,
+          "isAvailable": true
+        }
+      ],
+      "attributes": [
+        {
+          "key": "Grade",
+          "value": "International Industrial Grade 1"
+        },
+        {
+          "key": "Certification",
+          "value": "Certificate of Analysis & Chamber of Commerce Certified"
+        }
+      ],
+      "wholesaleRules": {
+        "minQuantity": 1,
+        "discountPercent": 8,
+        "requireQuote": true,
+        "termsNote": "Tiered wholesale pricing: $1,650/unit for orders exceeding 5 units. Air cargo CIP major global hubs.",
+        "termsNoteFa": "تخفیف ویژه سفارش‌های تیراژ بالا: ۱۶۵۰ دالر به ازای هر واحد برای سفارش ۵ واحد به بالا همراه با باربری هوایی CIP.",
+        "isConfirmed": true
+      },
+      "shippingDetails": {
+        "fee": "CIP air cargo dispatch to designated international airports.",
+        "transitTime": "3-5 business days upon customs clearance",
+        "coverage": "London, Frankfurt, Dubai, Istanbul, Singapore, New York",
+        "isConfirmed": true
+      },
+      "qualityInfo": {
+        "grade": "Commercial Prime Grade",
+        "standard": "ISO Standards & Phytosanitary Clearances",
+        "labReportNumber": "EXP-HEKA-2026-90",
+        "isConfirmed": true,
+        "notes": "Fully authenticated batch with laboratory spectrum validation."
+      },
+      "isPublished": true,
+      "isFeatured": false,
+      "createdAt": "2026-02-01T10:00:00Z",
+      "updatedAt": "2026-02-28T14:00:00Z",
+      "approvalStatus": "approved"
+    },
+    {
+      "id": "prod_ziba_1",
+      "companyId": "comp_ziba_fashion",
+      "name": "Handcrafted Afghan Silk Chapan Robe",
+      "nameFa": "چپن ابریشمی دست‌دوز سنتی افغانستان",
+      "category": "Outerwear",
+      "description": "Traditional Afghan long chapan coat handwoven from pure Herat raw silk, featuring intricate golden border embroidery and cotton lining.",
+      "descriptionFa": "چپن اصیل ابریشمی بافته شده از ابریشم طبیعی هرات همراه با سوزن‌دوزی زرین و آستر نخی بسیار سبک و شیک.",
+      "images": [
+        "https://images.unsplash.com/photo-1544441893-675973e31985?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&auto=format&fit=crop&q=80"
+      ],
+      "unit": "piece",
+      "retailPrice": 120,
+      "currency": "$",
+      "stock": 18,
+      "packageSizes": [
+        {
+          "id": "size_s",
+          "name": "Size S (Chest 38\")",
+          "weightOrSize": "S",
+          "price": 120,
+          "stock": 4,
+          "isAvailable": true
+        },
+        {
+          "id": "size_m",
+          "name": "Size M (Chest 42\")",
+          "weightOrSize": "M",
+          "price": 120,
+          "stock": 8,
+          "isAvailable": true
+        },
+        {
+          "id": "size_l",
+          "name": "Size L (Chest 46\")",
+          "weightOrSize": "L",
+          "price": 135,
+          "stock": 6,
+          "isAvailable": true
+        }
+      ],
+      "attributes": [
+        {
+          "key": "Material",
+          "value": "100% Pure Raw Silk"
+        },
+        {
+          "key": "Embroidery",
+          "value": "Khamak gold-thread embroidery"
+        },
+        {
+          "key": "Lining",
+          "value": "Breathable soft cotton"
+        }
+      ],
+      "wholesaleRules": {
+        "minQuantity": 5,
+        "discountPercent": 15,
+        "requireQuote": true,
+        "termsNote": "Wholesale orders require 10 business days for bespoke sizing. Custom colorways available.",
+        "termsNoteFa": "سفارشات عمده نیازمند ۱۰ روز کاری برای دوخت اختصاصی است.",
+        "isConfirmed": true
+      },
+      "shippingDetails": {
+        "fee": "Free delivery in Kabul. International tracked post: $25.",
+        "transitTime": "24h in Kabul; 7-12 days international post",
+        "coverage": "Worldwide",
+        "isConfirmed": true
+      },
+      "qualityInfo": {
+        "grade": "Heritage Handcraft Certified",
+        "isConfirmed": true,
+        "notes": "Handwoven on traditional wood looms in Herat."
+      },
+      "isPublished": true,
+      "isFeatured": true,
+      "createdAt": "2026-02-16T11:00:00Z",
+      "updatedAt": "2026-02-28T16:00:00Z",
+      "approvalStatus": "approved"
+    },
+    {
+      "id": "prod_ziba_2",
+      "companyId": "comp_ziba_fashion",
+      "name": "Embroidered Silk Pashmina Scarf",
+      "nameFa": "شال پشمینه ابریشمی سوزن‌دوزی",
+      "category": "Accessories",
+      "description": "Ultra-soft silk and cashmere blend shawl adorned with subtle handcrafted floral needlework.",
+      "descriptionFa": "شال بسیار لطیف ترکیب ابریشم و کشمیر همراه با گل‌دوزی ظریف دست‌دوز سنتی.",
+      "images": [
+        "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?w=800&auto=format&fit=crop&q=80"
+      ],
+      "unit": "piece",
+      "retailPrice": 45,
+      "currency": "$",
+      "stock": 30,
+      "packageSizes": [
+        {
+          "id": "size_standard_scarf",
+          "name": "Standard (200cm x 70cm)",
+          "weightOrSize": "200x70cm",
+          "price": 45,
+          "stock": 30,
+          "isAvailable": true
+        }
+      ],
+      "attributes": [
+        {
+          "key": "Composition",
+          "value": "70% Silk, 30% Cashmere"
+        }
+      ],
+      "wholesaleRules": {
+        "minQuantity": 10,
+        "discountPercent": 20,
+        "requireQuote": true,
+        "termsNote": "20% off for 10+ pieces. Gift packaging included.",
+        "termsNoteFa": "۲۰٪ تخفیف برای سفارش ۱۰ عدد به بالا همراه با بسته‌بندی هدیه.",
+        "isConfirmed": true
+      },
+      "shippingDetails": {
+        "fee": "Free domestic shipping. Air shipping $15 worldwide.",
+        "transitTime": "48 hours domestic; 5-9 days international",
+        "coverage": "Worldwide",
+        "isConfirmed": true
+      },
+      "qualityInfo": {
+        "grade": "Premium Artisan Quality",
+        "isConfirmed": true
+      },
+      "isPublished": true,
+      "isFeatured": false,
+      "createdAt": "2026-02-25T08:00:00Z",
+      "updatedAt": "2026-03-01T12:00:00Z",
+      "approvalStatus": "approved"
+    },
+    {
+      "id": "prod_seller_kabul_1",
+      "companyId": "comp_heka_ltd",
+      "sellerId": "user_zahir_seller",
+      "sellerName": "Kabul Artisan Handicrafts Co.",
+      "name": "Hand-Carved Walnut Keepsake Chest with Brass Inlay",
+      "nameFa": "صندوقچه چوبی دست‌ساز گردو با برنج‌کوبی اصیل کابل",
+      "category": "Executive Gifts & Specialty Goods",
+      "description": "Solid walnut keepsake presentation chest with geometric brass filigree inlays, velvet interior, and engraved brass clasp. Handcrafted by master woodworkers in Kabul.",
+      "descriptionFa": "صندوقچه تشریفاتی چوب گردوی کوهستان با معرق‌کاری برنجی، آستر مخمل یشمی و قفل سنتی دست‌ساز.",
+      "images": [
+        "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=800&auto=format&fit=crop&q=80"
+      ],
+      "unit": "piece",
+      "retailPrice": 85,
+      "currency": "$",
+      "stock": 24,
+      "packageSizes": [
+        {
+          "id": "chest_standard",
+          "name": "Standard Medium Chest",
+          "weightOrSize": "25x15x12 cm",
+          "price": 85,
+          "stock": 16,
+          "isAvailable": true
+        },
+        {
+          "id": "chest_large",
+          "name": "Executive Master Chest",
+          "weightOrSize": "35x20x15 cm",
+          "price": 135,
+          "stock": 8,
+          "isAvailable": true
+        }
+      ],
+      "attributes": [
+        {
+          "key": "Material",
+          "value": "Old-Growth Mountain Walnut Wood"
+        },
+        {
+          "key": "Inlay",
+          "value": "Solid Pure Brass Filigree"
+        },
+        {
+          "key": "Interior",
+          "value": "Emerald Green Velvet Lining"
+        }
+      ],
+      "wholesaleRules": {
+        "minQuantity": 5,
+        "discountPercent": 10,
+        "requireQuote": true,
+        "termsNote": "10% volume discount for corporate orders of 5+ pieces.",
+        "isConfirmed": true
+      },
+      "shippingDetails": {
+        "fee": "Worldwide priority express dispatch with tracked packing.",
+        "transitTime": "3-5 business days international",
+        "coverage": "UK, EU, Middle East, USA, Central Asia",
+        "isConfirmed": true
+      },
+      "qualityInfo": {
+        "grade": "Master Artisan Guild Certified Grade A",
+        "standard": "100% Solid Hardwood Verified",
+        "isConfirmed": true,
+        "notes": "Individually authenticated and stamped by guild."
+      },
+      "approvalStatus": "approved",
+      "isPublished": true,
+      "isFeatured": false,
+      "createdAt": "2026-02-15T09:00:00Z",
+      "reviewedAt": "2026-02-16T10:00:00Z",
+      "updatedAt": "2026-02-16T10:00:00Z"
+    },
+    {
+      "id": "prod_seller_kabul_2",
+      "companyId": "comp_heka_ltd",
+      "sellerId": "user_zahir_seller",
+      "sellerName": "Kabul Artisan Handicrafts Co.",
+      "name": "Badakhshan Lapis Lazuli Executive Desk Pen Stand & Plaque",
+      "nameFa": "پایه قلم و تندیس رومیزی سنگ لاجورد بدخشان",
+      "category": "Executive Gifts & Specialty Goods",
+      "description": "Natural royal blue lapis lazuli stone desk stand with brass pen cradle and polished marble plinth. Mined from historic Badakhshan deposits.",
+      "descriptionFa": "پایه قلم مدیریتی تراشیده شده از سنگ اصیل لاجورد آبی سلطنتی با پایه‌های برنجی و سنگ مرمر صیقلی.",
+      "images": [
+        "https://images.unsplash.com/photo-1584727638096-042c45049ebe?w=800&auto=format&fit=crop&q=80"
+      ],
+      "unit": "piece",
+      "retailPrice": 145,
+      "currency": "$",
+      "stock": 12,
+      "packageSizes": [],
+      "attributes": [
+        {
+          "key": "Stone",
+          "value": "100% Natural Royal Lapis Lazuli"
+        },
+        {
+          "key": "Origin",
+          "value": "Badakhshan, Afghanistan"
+        },
+        {
+          "key": "Base",
+          "value": "White Carrara Composite Marble"
+        }
+      ],
+      "wholesaleRules": {
+        "minQuantity": 3,
+        "discountPercent": 8,
+        "requireQuote": true,
+        "termsNote": "Wholesale quotation on corporate gifts of 3+ units.",
+        "isConfirmed": true
+      },
+      "shippingDetails": {
+        "fee": "Secure foam-cushioned international dispatch.",
+        "transitTime": "4-6 business days",
+        "coverage": "Global",
+        "isConfirmed": true
+      },
+      "qualityInfo": {
+        "grade": "Gemological Spectrum Verified",
+        "isConfirmed": true,
+        "notes": "No dyes or artificial resins used."
+      },
+      "approvalStatus": "pending_review",
+      "isPublished": false,
+      "isFeatured": false,
+      "submittedAt": "2026-03-02T11:00:00Z",
+      "createdAt": "2026-03-02T11:00:00Z",
+      "updatedAt": "2026-03-02T11:00:00Z"
+    }
+  ],
+  "inquiries": [
+    {
+      "id": "inq_1792941597487_jx1zs",
+      "requestReference": "HEKA-RFQ-2026-1003-A4Y",
+      "companyId": "comp_heka_ltd",
+      "customerName": "London Logistics Partners Ltd",
+      "customerContact": "+44 20 7946 0555",
+      "customerLocation": "London, UK",
+      "inquiryType": "wholesale_quote",
+      "productId": "prod_heka_1",
+      "productName": "HEKA Signature Reserve Luxury Gift Collection",
+      "customerEmail": "procurement@londonlogistics.co.uk",
+      "requestedQuantity": 25,
+      "message": "Requesting official quotation for 25 units of HEKA Executive Grade Saffron (Gift Pack).",
+      "replyLanguage": "en",
+      "status": "new",
+      "createdAt": "2026-10-25T15:19:57.487Z",
+      "persistedAt": "2026-10-25T15:19:57.487Z",
+      "notifications": {
+        "email": {
+          "channel": "email",
+          "status": "not_configured",
+          "destination": "khanedriss5951@gmail.com",
+          "normalizedDestination": "khanedriss5951@gmail.com",
+          "provider": "Unconfigured Email Provider",
+          "providerNote": "Not Configured: Destination khanedriss5951@gmail.com is saved, but no server-side email provider credentials (RESEND_API_KEY, SENDGRID_API_KEY, or EMAIL_WEBHOOK_URL) are set in environment variables.",
+          "attempts": 2,
+          "idempotencyKey": "inq_1792941597487_jx1zs:email",
+          "lastAttemptAt": "2026-10-25T15:19:57.528Z"
+        },
+        "telegram": {
+          "channel": "telegram",
+          "status": "not_configured",
+          "destination": "https://t.me/HEKA_480",
+          "normalizedDestination": "https://t.me/HEKA_480",
+          "provider": "Telegram Bot API",
+          "providerNote": "Not Configured: Public destination reference (https://t.me/HEKA_480) is recorded, but TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID (numeric chat ID or authorized @channel) must be configured on the server. A public profile link is not a valid Bot API chat_id without bot initialization.",
+          "attempts": 2,
+          "idempotencyKey": "inq_1792941597487_jx1zs:telegram",
+          "lastAttemptAt": "2026-10-25T15:19:57.528Z"
+        },
+        "whatsapp": {
+          "channel": "whatsapp",
+          "status": "not_configured",
+          "destination": "0093728224060",
+          "normalizedDestination": "+93728224060",
+          "provider": "Meta WhatsApp Business Cloud API",
+          "providerNote": "Not Configured: Destination 0093728224060 (normalized E.164: +93728224060) is saved, but WHATSAPP_ACCESS_TOKEN and WHATSAPP_PHONE_NUMBER_ID are not configured in server environment variables.",
+          "attempts": 2,
+          "idempotencyKey": "inq_1792941597487_jx1zs:whatsapp",
+          "lastAttemptAt": "2026-10-25T15:19:57.528Z"
+        }
+      }
+    },
+    {
+      "id": "inq_1",
+      "companyId": "comp_heka_ltd",
+      "customerName": "Marcus Sterling (Aura Global)",
+      "customerContact": "m.sterling@auraglobal.co.uk",
+      "customerLocation": "London / Dubai Hub",
+      "inquiryType": "export_inquiry",
+      "productId": "prod_heka_2",
+      "productName": "HEKA Industrial & Commercial Grade Supply (Bulk Canister)",
+      "requestedQuantity": 5,
+      "message": "Good day, we require 5 units of your commercial grade canister for our regional distribution hub in Dubai. What is your CIP quote and estimated delivery timeline?",
+      "replyLanguage": "en",
+      "status": "new",
+      "createdAt": "2026-03-02T10:15:00Z",
+      "requestReference": "HEKA-RFQ-2026-1001",
+      "persistedAt": "2026-03-02T10:15:00Z",
+      "notifications": {
+        "email": {
+          "channel": "email",
+          "status": "not_configured",
+          "destination": "khanedriss5951@gmail.com",
+          "normalizedDestination": "khanedriss5951@gmail.com",
+          "provider": "Not Configured (Awaiting Server Email Provider)",
+          "providerNote": "Recorded prior to external email provider configuration.",
+          "attempts": 0,
+          "idempotencyKey": "inq_1:email"
+        },
+        "telegram": {
+          "channel": "telegram",
+          "status": "not_configured",
+          "destination": "https://t.me/HEKA_480",
+          "normalizedDestination": "https://t.me/HEKA_480",
+          "provider": "Telegram Bot API",
+          "providerNote": "Not Configured: Public destination reference (https://t.me/HEKA_480) is recorded, but TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID (numeric chat ID or authorized @channel) must be configured on the server. A public profile link is not a valid Bot API chat_id without bot initialization.",
+          "attempts": 1,
+          "idempotencyKey": "inq_1:telegram",
+          "lastAttemptAt": "2026-10-25T15:33:15.226Z"
+        },
+        "whatsapp": {
+          "channel": "whatsapp",
+          "status": "not_configured",
+          "destination": "0093728224060",
+          "normalizedDestination": "+93728224060",
+          "provider": "Not Configured (Awaiting WhatsApp Business Platform API)",
+          "providerNote": "Recorded prior to WhatsApp Business Cloud API configuration.",
+          "attempts": 0,
+          "idempotencyKey": "inq_1:whatsapp"
+        }
+      }
+    },
+    {
+      "id": "inq_2",
+      "companyId": "comp_ziba_fashion",
+      "customerName": "Fatima Sultani",
+      "customerContact": "+93788998877",
+      "customerLocation": "Kabul",
+      "inquiryType": "retail_question",
+      "productId": "prod_ziba_1",
+      "productName": "Handcrafted Afghan Silk Chapan Robe",
+      "requestedQuantity": 2,
+      "message": "سلام، آیا سایز مدیوم این چپن ابریشمی را موجود دارید و با ارسال به شهر نو کابل چقدر می‌شود؟",
+      "replyLanguage": "fa",
+      "status": "new",
+      "createdAt": "2026-03-03T14:20:00Z",
+      "requestReference": "HEKA-RFQ-2026-1002",
+      "persistedAt": "2026-03-03T14:20:00Z",
+      "notifications": {
+        "email": {
+          "channel": "email",
+          "status": "not_configured",
+          "destination": "khanedriss5951@gmail.com",
+          "normalizedDestination": "khanedriss5951@gmail.com",
+          "provider": "Not Configured (Awaiting Server Email Provider)",
+          "providerNote": "Recorded prior to external email provider configuration.",
+          "attempts": 0,
+          "idempotencyKey": "inq_2:email"
+        },
+        "telegram": {
+          "channel": "telegram",
+          "status": "not_configured",
+          "destination": "https://t.me/HEKA_480",
+          "normalizedDestination": "https://t.me/HEKA_480",
+          "provider": "Not Configured (Awaiting Bot Token & Chat ID)",
+          "providerNote": "Recorded prior to Telegram Bot API configuration.",
+          "attempts": 0,
+          "idempotencyKey": "inq_2:telegram"
+        },
+        "whatsapp": {
+          "channel": "whatsapp",
+          "status": "not_configured",
+          "destination": "0093728224060",
+          "normalizedDestination": "+93728224060",
+          "provider": "Not Configured (Awaiting WhatsApp Business Platform API)",
+          "providerNote": "Recorded prior to WhatsApp Business Cloud API configuration.",
+          "attempts": 0,
+          "idempotencyKey": "inq_2:whatsapp"
+        }
+      }
+    }
+  ],
+  "supportTickets": [
+    {
+      "id": "tck_1792910475669_qkp6b",
+      "ticketNumber": "TCK-2026-60",
+      "companyId": "comp_heka_ltd",
+      "subject": "Test Logistics Inquiry",
+      "description": "Testing verification of persistent ticket creation.",
+      "category": "logistics",
+      "priority": "urgent",
+      "status": "new",
+      "conversationLanguage": "ps",
+      "attachments": [
+        "Test_Document.pdf"
+      ],
+      "createdBy": "HEKA Corporate Director",
+      "createdAt": "2026-10-25T06:41:15.669Z",
+      "updatedAt": "2026-10-25T06:41:15.669Z"
+    },
+    {
+      "id": "tck_101",
+      "ticketNumber": "TCK-2026-101",
+      "companyId": "comp_heka_ltd",
+      "subject": "Consignment Clearance Documents - Air-Cargo Consignment #HK-8821",
+      "description": "Requesting verified phytosanitary and export certificate of origin for the latest air-cargo consignment to Frankfurt hub.",
+      "category": "logistics",
+      "priority": "high",
+      "status": "in_progress",
+      "conversationLanguage": "en",
+      "attachments": [
+        "Certificate_Of_Origin_Draft.pdf",
+        "AirWayBill_HK8821.pdf"
+      ],
+      "createdBy": "HEKA Logistics Office",
+      "customerContact": "logistics@hekaltd.com",
+      "createdAt": "2026-03-01T09:30:00Z",
+      "updatedAt": "2026-03-02T11:15:00Z"
+    },
+    {
+      "id": "tck_102",
+      "ticketNumber": "TCK-2026-102",
+      "companyId": "comp_heka_ltd",
+      "subject": "درخواست پیش‌فاکتور رسمی برای ارسال محموله زعفران سوپر نگین به دبی",
+      "description": "جهت نهایی‌سازی سفارش عمده ۱۰ کیلوگرمی، لطفاً پیش‌فاکتور رسمی با تفکیک هزینه‌های بسته‌بندی هرمتیک و بیمه ارسال فرمایید.",
+      "category": "billing",
+      "priority": "medium",
+      "status": "open",
+      "conversationLanguage": "fa",
+      "attachments": [
+        "Proforma_Request_Details.docx"
+      ],
+      "createdBy": "Aura Global Trading Dubai",
+      "customerContact": "m.sterling@auraglobal.co.uk",
+      "createdAt": "2026-03-02T14:00:00Z",
+      "updatedAt": "2026-03-02T14:00:00Z"
+    },
+    {
+      "id": "tck_103",
+      "ticketNumber": "TCK-2026-103",
+      "companyId": "comp_heka_ltd",
+      "subject": "د کیفیت لابراتواري اسنادو او ISO 3632 تصدیق‌پاڼې غوښتنه",
+      "description": "د اروپایي ټولنې د ګمرک لپاره د ISO 3632 معیاري لابراتواري ټېسټ راپور ته اړتیا لرو ترڅو محموله ژر تر ژره ترخیص شي.",
+      "category": "quality",
+      "priority": "urgent",
+      "status": "waiting_customer",
+      "conversationLanguage": "ps",
+      "attachments": [
+        "Lab_Test_Specimen.pdf"
+      ],
+      "createdBy": "Kabul Trade Logistics",
+      "customerContact": "+93700112233",
+      "createdAt": "2026-03-03T10:00:00Z",
+      "updatedAt": "2026-03-03T16:45:00Z"
+    },
+    {
+      "id": "tck_104",
+      "ticketNumber": "TCK-2026-104",
+      "companyId": "comp_heka_ltd",
+      "subject": "B2B Customer Portal API Credential Rotation",
+      "description": "Scheduled quarterly API credential refresh for B2B wholesale consignment inventory automated sync.",
+      "category": "technical",
+      "priority": "low",
+      "status": "resolved",
+      "conversationLanguage": "en",
+      "attachments": [
+        "API_Rotation_Checklist.pdf"
+      ],
+      "createdBy": "Enterprise Integrations Team",
+      "customerContact": "devops@hekaltd.com",
+      "createdAt": "2026-02-20T08:00:00Z",
+      "updatedAt": "2026-02-22T17:30:00Z"
+    },
+    {
+      "id": "tck_201",
+      "ticketNumber": "TCK-2026-201",
+      "companyId": "comp_ziba_fashion",
+      "subject": "د لاسي ګلدوزۍ او ابریشمي ټوکر د عمده پېر پوښتنه",
+      "description": "د هرات د ابریشمي ټوکر د لاسي جوړ شویو نمونو د رنګونو او لېږد د لګښت په اړه پوښتنه لرو.",
+      "category": "general",
+      "priority": "medium",
+      "status": "new",
+      "conversationLanguage": "ps",
+      "createdBy": "Farhad Qasimi",
+      "customerContact": "+93799887766",
+      "createdAt": "2026-03-04T11:00:00Z",
+      "updatedAt": "2026-03-04T11:00:00Z"
+    }
+  ],
+  "sellerApplications": [
+    {
+      "id": "app_kabul_crafts",
+      "userId": "user_zahir_seller",
+      "applicantName": "Mohammad Zahir",
+      "businessName": "Kabul Artisan Handicrafts Co.",
+      "businessType": "Manufacturer & Producer",
+      "country": "Afghanistan",
+      "city": "Kabul",
+      "phone": "+93 700 123 456",
+      "email": "kabul.crafts@afghantrade.com",
+      "description": "Traditional Afghan hand-carved walnut wood boxes, brass inlay presentation cases, and Badakhshan lapis lazuli handicrafts for export distribution.",
+      "productCategories": [
+        "Executive Gifts & Specialty Goods",
+        "Handicrafts & Decor"
+      ],
+      "registrationNumber": "AFG-MOC-7712",
+      "documents": [
+        "Commercial_License_AFG_7712.pdf",
+        "Artisan_Guild_Cert.jpg"
+      ],
+      "status": "approved",
+      "submittedAt": "2026-02-12T10:30:00Z",
+      "reviewedAt": "2026-02-14T11:00:00Z",
+      "reviewedBy": "admin@hekaltd.com",
+      "adminNotes": "Verified registration with Ministry of Commerce & Chamber of Handicrafts. Approved for specialty catalog listing."
+    },
+    {
+      "id": "app_herat_saffron",
+      "userId": "user_farid_pending_seller",
+      "applicantName": "Ahmad Farid",
+      "businessName": "Herat Organic Agricultural Cooperative",
+      "businessType": "Agricultural Producer Cooperative",
+      "country": "Afghanistan",
+      "city": "Herat",
+      "phone": "+93 799 456 789",
+      "email": "herat.saffron.coop@heratfarms.af",
+      "description": "Union of 45 family farms producing certified Grade 1 Super Negin saffron and sun-dried organic figs for international bulk trade.",
+      "productCategories": [
+        "Agricultural Export & Saffron",
+        "Organic Dried Fruits"
+      ],
+      "registrationNumber": "AFG-AGR-4409",
+      "documents": [
+        "Coop_Establishment_Charter.pdf",
+        "ISO_3632_Specimen.pdf"
+      ],
+      "status": "pending",
+      "submittedAt": "2026-03-01T09:15:00Z",
+      "adminNotes": "Application received and awaiting HEKA LTD directorate review."
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat_industrial_machinery",
+      "companyId": "comp_heka_ltd",
+      "parentId": null,
+      "name": "Industrial Machinery & Equipment",
+      "nameFa": "ماشین‌آلات و تجهیزات صنعتی",
+      "namePs": "صنعتي ماشین الات او تجهیزات",
+      "slug": "industrial-machinery-equipment",
+      "description": "Heavy-duty manufacturing, processing, and power generation equipment for commercial operations.",
+      "descriptionFa": "تجهیزات تولیدی سنگین، پروسس و تولید برق برای عملیات تجارتی و صنعتی.",
+      "descriptionPs": "د سوداګریزو او صنعتي عملیاتو لپاره درانه تولیدي، پروسس او د بریښنا تولید تجهیزات.",
+      "icon": "Factory",
+      "order": 1,
+      "isActive": true,
+      "createdAt": "2026-01-10T08:00:00Z",
+      "updatedAt": "2026-01-10T08:00:00Z"
+    },
+    {
+      "id": "sub_ind_heavy",
+      "companyId": "comp_heka_ltd",
+      "parentId": "cat_industrial_machinery",
+      "name": "Heavy Manufacturing Equipment",
+      "nameFa": "تجهیزات تولید سنگین",
+      "namePs": "درانه تولیدي تجهیزات",
+      "slug": "heavy-manufacturing-equipment",
+      "description": "CNC machines, industrial presses, and automated production lines.",
+      "descriptionFa": "ماشین‌های CNC، پرس‌های صنعتی و خطوط تولید اتوماتیک.",
+      "descriptionPs": "د CNC ماشینونه، صنعتي پریسونه او اتومات تولیدي لیکې.",
+      "order": 1,
+      "isActive": true,
+      "createdAt": "2026-01-10T08:00:00Z",
+      "updatedAt": "2026-01-10T08:00:00Z"
+    },
+    {
+      "id": "sub_ind_generators",
+      "companyId": "comp_heka_ltd",
+      "parentId": "cat_industrial_machinery",
+      "name": "Power Generators & Compressors",
+      "nameFa": "جنراتورها و کمپرسورهای صنعتی",
+      "namePs": "صنعتي جنراتورونه او کمپرسورونه",
+      "slug": "power-generators-compressors",
+      "description": "Diesel generators, air compressors, and industrial turbines.",
+      "descriptionFa": "جنراتورهای دیزلی، کمپرسورهای هوا و توربین‌های صنعتی.",
+      "descriptionPs": "ډیزلي جنراتورونه، د هوا کمپرسورونه او صنعتي توربینونه.",
+      "order": 2,
+      "isActive": true,
+      "createdAt": "2026-01-10T08:00:00Z",
+      "updatedAt": "2026-01-10T08:00:00Z"
+    },
+    {
+      "id": "sub_ind_processing",
+      "companyId": "comp_heka_ltd",
+      "parentId": "cat_industrial_machinery",
+      "name": "Food & Textile Processing Machines",
+      "nameFa": "ماشین‌آلات پروسس مواد غذایی و نساجی",
+      "namePs": "د خوړو او نساجۍ پروسس ماشینونه",
+      "slug": "food-textile-processing-machines",
+      "description": "Commercial milling, sorting, roasting, and spinning machinery.",
+      "descriptionFa": "ماشین‌آلات آسیاب، سورتینگ، برشته‌کاری و ریسندگی تجارتی.",
+      "descriptionPs": "سوداګریز د اوړو، چاڼ، وریتولو او اوبدلو ماشینونه.",
+      "order": 3,
+      "isActive": true,
+      "createdAt": "2026-01-10T08:00:00Z",
+      "updatedAt": "2026-01-10T08:00:00Z"
+    },
+    {
+      "id": "cat_agriculture_food",
+      "companyId": "comp_heka_ltd",
+      "parentId": null,
+      "name": "Agriculture & Food Products",
+      "nameFa": "محصولات زراعتی و مواد غذایی",
+      "namePs": "کرنیز او خوراکي محصولات",
+      "slug": "agriculture-food-products",
+      "description": "Export-grade saffron, spices, dried fruits, nuts, grains, and agricultural inputs.",
+      "descriptionFa": "زعفران صادراتی، ادویه‌جات، میوه خشک، خشکبار، غلات و نهادهای زراعتی.",
+      "descriptionPs": "صادراتي زعفران، مصالحې، وچه میوه، مغزیات، غلې دانې او کرنیز توکي.",
+      "icon": "Wheat",
+      "order": 2,
+      "isActive": true,
+      "createdAt": "2026-01-10T08:00:00Z",
+      "updatedAt": "2026-01-10T08:00:00Z"
+    },
+    {
+      "id": "sub_agr_spices",
+      "companyId": "comp_heka_ltd",
+      "parentId": "cat_agriculture_food",
+      "name": "Saffron, Spices & Herbs",
+      "nameFa": "زعفران، ادویه‌جات و گیاهان طبی",
+      "namePs": "زعفران، مصالحې او طبي بوټي",
+      "slug": "saffron-spices-herbs",
+      "description": "Super Negin saffron, organic cumin, cardamom, and medicinal herbs.",
+      "descriptionFa": "زعفران سوپر نگین، زیره ارگانیک، هل و گیاهان طبی.",
+      "descriptionPs": "سوپر نګین زعفران، طبیعي زیره، هیل او طبي بوټي.",
+      "order": 1,
+      "isActive": true,
+      "createdAt": "2026-01-10T08:00:00Z",
+      "updatedAt": "2026-01-10T08:00:00Z"
+    },
+    {
+      "id": "sub_agr_dried_fruits",
+      "companyId": "comp_heka_ltd",
+      "parentId": "cat_agriculture_food",
+      "name": "Dried Fruits, Nuts & Grains",
+      "nameFa": "میوه خشک، خشکبار و غلات",
+      "namePs": "وچه میوه، مغزیات او غلې دانې",
+      "slug": "dried-fruits-nuts-grains",
+      "description": "Pine nuts, almonds, pistachios, raisins, figs, and bulk pulses.",
+      "descriptionFa": "جلغوزه، بادام، پسته، کشمش، انجیر و حبوبات عمده.",
+      "descriptionPs": "جلغوزي، بادام، پسته، ممیز، انځر او عمده حبوبات.",
+      "order": 2,
+      "isActive": true,
+      "createdAt": "2026-01-10T08:00:00Z",
+      "updatedAt": "2026-01-10T08:00:00Z"
+    },
+    {
+      "id": "sub_agr_supplies",
+      "companyId": "comp_heka_ltd",
+      "parentId": "cat_agriculture_food",
+      "name": "Agricultural Seeds & Fertilizers",
+      "nameFa": "تخم‌های اصلاح‌شده و کودهای زراعتی",
+      "namePs": "اصلاح شوي تخمونه او کرنیزې سرې",
+      "slug": "agricultural-seeds-fertilizers",
+      "description": "Certified crop seeds, organic fertilizers, and irrigation supplies.",
+      "descriptionFa": "تخم‌های بذری تصدیق‌شده، کودهای ارگانیک و تجهیزات آبیاری.",
+      "descriptionPs": "تصدیق شوي کرنیز تخمونه، طبیعي سرې او د اوبو لګولو وسایل.",
+      "order": 3,
+      "isActive": true,
+      "createdAt": "2026-01-10T08:00:00Z",
+      "updatedAt": "2026-01-10T08:00:00Z"
+    },
+    {
+      "id": "cat_construction_materials",
+      "companyId": "comp_heka_ltd",
+      "parentId": null,
+      "name": "Construction Materials",
+      "nameFa": "مواد ساختمانی و عمرانی",
+      "namePs": "ودانیز او ساختماني توکي",
+      "slug": "construction-materials",
+      "description": "Structural steel, cement, natural marble, stone, plumbing, and commercial hardware.",
+      "descriptionFa": "فولاد سازه‌ای، سمنت، سنگ مرمر طبیعی، نل‌دوانی و ابزارآلات ساختمانی.",
+      "descriptionPs": "ساختماني فولاد، سمنټ، طبیعي مرمر ډبره، نل غځونه او ودانیز وسایل.",
+      "icon": "HardHat",
+      "order": 3,
+      "isActive": true,
+      "createdAt": "2026-01-10T08:00:00Z",
+      "updatedAt": "2026-01-10T08:00:00Z"
+    },
+    {
+      "id": "sub_con_structural",
+      "companyId": "comp_heka_ltd",
+      "parentId": "cat_construction_materials",
+      "name": "Steel, Cement & Structural Materials",
+      "nameFa": "فولاد، سمنت و مواد سازه‌ای",
+      "namePs": "فولاد، سمنټ او ساختماني مواد",
+      "slug": "steel-cement-structural-materials",
+      "description": "Rebar, structural beams, Portland cement, and insulation blocks.",
+      "descriptionFa": "سیخ گول، تیرآهن، سمنت پورتلند و بلوک‌های عایق.",
+      "descriptionPs": "ګول سیخان، اوسپنیزې ستنې، پورټلینډ سمنټ او عایق بلاکونه.",
+      "order": 1,
+      "isActive": true,
+      "createdAt": "2026-01-10T08:00:00Z",
+      "updatedAt": "2026-01-10T08:00:00Z"
+    },
+    {
+      "id": "sub_con_stone",
+      "companyId": "comp_heka_ltd",
+      "parentId": "cat_construction_materials",
+      "name": "Marble, Stone & Flooring",
+      "nameFa": "سنگ مرمر، کاشی و کف‌پوش",
+      "namePs": "مرمر ډبره، کاشي او فرشونه",
+      "slug": "marble-stone-flooring",
+      "description": "Natural white marble, travertine, granite slabs, and ceramic tiles.",
+      "descriptionFa": "مرمر سفید طبیعی، تراورتن، تخته‌های گرانیت و کاشی سرامیک.",
+      "descriptionPs": "طبیعي سپینه مرمر ډبره، تراورتن، ګرانیټ او سیرامیک کاشي.",
+      "order": 2,
+      "isActive": true,
+      "createdAt": "2026-01-10T08:00:00Z",
+      "updatedAt": "2026-01-10T08:00:00Z"
+    },
+    {
+      "id": "sub_con_plumbing",
+      "companyId": "comp_heka_ltd",
+      "parentId": "cat_construction_materials",
+      "name": "Plumbing, Hardware & Coatings",
+      "nameFa": "نل‌دوانی، ابزارآلات و رنگ‌های صنعتی",
+      "namePs": "نل غځونه، وسایل او صنعتي رنګونه",
+      "slug": "plumbing-hardware-coatings",
+      "description": "Pipes, valves, fasteners, waterproof membranes, and industrial coatings.",
+      "descriptionFa": "پایپ‌ها، شیرآلات، پیچ و مهره، عایق‌های رطوبتی و رنگ‌های صنعتی.",
+      "descriptionPs": "پایپونه، والونه، پیچونه، د اوبو ضد عایق او صنعتي رنګونه.",
+      "order": 3,
+      "isActive": true,
+      "createdAt": "2026-01-10T08:00:00Z",
+      "updatedAt": "2026-01-10T08:00:00Z"
+    },
+    {
+      "id": "cat_electronics_technology",
+      "companyId": "comp_heka_ltd",
+      "parentId": null,
+      "name": "Electronics & Technology",
+      "nameFa": "الکترونیک و تکنالوژی",
+      "namePs": "الکترونیک او ټیکنالوژي",
+      "slug": "electronics-technology",
+      "description": "Solar energy systems, enterprise networking hardware, telecommunications, and smart electronics.",
+      "descriptionFa": "سیستم‌های انرژی سولر، تجهیزات شبکه سازمانی، مخابرات و الکترونیک هوشمند.",
+      "descriptionPs": "د لمریزې انرژۍ سیستمونه، د شبکې تجهیزات، مخابرات او ځیرک الکترونیکي وسایل.",
+      "icon": "Cpu",
+      "order": 4,
+      "isActive": true,
+      "createdAt": "2026-01-10T08:00:00Z",
+      "updatedAt": "2026-01-10T08:00:00Z"
+    },
+    {
+      "id": "sub_elec_solar",
+      "companyId": "comp_heka_ltd",
+      "parentId": "cat_electronics_technology",
+      "name": "Solar Panels, Inverters & Energy Systems",
+      "nameFa": "پنل‌های سولر، انورتر و سیستم‌های انرژی",
+      "namePs": "سولر تختې، انورټرونه او د انرژۍ سیستمونه",
+      "slug": "solar-panels-inverters-energy",
+      "description": "Monocrystalline solar panels, hybrid inverters, and lithium battery banks.",
+      "descriptionFa": "پنل‌های سولر مونوکریستال، انورترهای هیبریدی و بانک‌های بطری لیتیوم.",
+      "descriptionPs": "مونوکریسټال سولر تختې، هایبریډ انورټرونه او لیتیم بیټرۍ.",
+      "order": 1,
+      "isActive": true,
+      "createdAt": "2026-01-10T08:00:00Z",
+      "updatedAt": "2026-01-10T08:00:00Z"
+    },
+    {
+      "id": "sub_elec_networking",
+      "companyId": "comp_heka_ltd",
+      "parentId": "cat_electronics_technology",
+      "name": "Enterprise IT & Networking Hardware",
+      "nameFa": "تجهیزات شبکه و تکنالوژی معلوماتی",
+      "namePs": "د شبکې او معلوماتي ټیکنالوژۍ تجهیزات",
+      "slug": "enterprise-it-networking-hardware",
+      "description": "Routers, switches, fiber optic cables, servers, and POS terminals.",
+      "descriptionFa": "روترها، سوییچ‌ها، کیبل‌های فایبر نوری، سرورها و ترمینال‌های فروش.",
+      "descriptionPs": "روټرونه، سویچونه، فایبر آپټیک کیبلونه، سرورونه او د پلور ماشینونه.",
+      "order": 2,
+      "isActive": true,
+      "createdAt": "2026-01-10T08:00:00Z",
+      "updatedAt": "2026-01-10T08:00:00Z"
+    },
+    {
+      "id": "sub_elec_commercial",
+      "companyId": "comp_heka_ltd",
+      "parentId": "cat_electronics_technology",
+      "name": "Commercial Appliances & Smart Devices",
+      "nameFa": "لوازم برقی تجارتی و دستگاه‌های هوشمند",
+      "namePs": "تجارتي برقي وسایل او ځیرک ماشینونه",
+      "slug": "commercial-appliances-smart-devices",
+      "description": "HVAC units, commercial refrigeration, security cameras, and sensors.",
+      "descriptionFa": "سیستم‌های تهویه، یخچال‌های تجارتی، کمره‌های امنیتی و سنسورها.",
+      "descriptionPs": "د هوا سیستمونه، تجارتي یخچالونه، امنیتي کمرې او سینسرونه.",
+      "order": 3,
+      "isActive": true,
+      "createdAt": "2026-01-10T08:00:00Z",
+      "updatedAt": "2026-01-10T08:00:00Z"
+    },
+    {
+      "id": "cat_packaging_raw_materials",
+      "companyId": "comp_heka_ltd",
+      "parentId": null,
+      "name": "Packaging & Raw Materials",
+      "nameFa": "بسته‌بندی و مواد خام",
+      "namePs": "بسته بندي او خام مواد",
+      "slug": "packaging-raw-materials",
+      "description": "Export packaging containers, raw silk, textile fibers, polymers, and industrial inputs.",
+      "descriptionFa": "ظروف بسته‌بندی صادراتی، ابریشم خام، الیاف نساجی، پلیمرها و مواد اولیه صنعتی.",
+      "descriptionPs": "صادراتي بسته بندي لوښي، خام ورېښم، نساجي تارونه، پولیمر او صنعتي خام مواد.",
+      "icon": "Package",
+      "order": 5,
+      "isActive": true,
+      "createdAt": "2026-01-10T08:00:00Z",
+      "updatedAt": "2026-01-10T08:00:00Z"
+    },
+    {
+      "id": "sub_pkg_containers",
+      "companyId": "comp_heka_ltd",
+      "parentId": "cat_packaging_raw_materials",
+      "name": "Industrial Boxes, Glass Jars & Containers",
+      "nameFa": "کارتن‌های صنعتی، ظروف شیشه‌ای و بسته‌بندی",
+      "namePs": "صنعتي کارتنونه، ښیښه یي لوښي او بسته بندي",
+      "slug": "industrial-boxes-jars-containers",
+      "description": "Corrugated cartons, luxury spice tins, vacuum pouches, and glass jars.",
+      "descriptionFa": "کارتن‌های چندلایه، قوطی‌های فلزی لوکس، پاکت‌های وکیوم و ظروف شیشه‌ای.",
+      "descriptionPs": "څو پوړیز کارتنونه، لوکس فلزي قوطۍ، ویکیوم پاکټونه او ښیښه یي لوښي.",
+      "order": 1,
+      "isActive": true,
+      "createdAt": "2026-01-10T08:00:00Z",
+      "updatedAt": "2026-01-10T08:00:00Z"
+    },
+    {
+      "id": "sub_pkg_textiles",
+      "companyId": "comp_heka_ltd",
+      "parentId": "cat_packaging_raw_materials",
+      "name": "Raw Silk, Fabrics & Textile Fibers",
+      "nameFa": "ابریشم خام، پارچه و الیاف نساجی",
+      "namePs": "خام ورېښم، ټوکر او نساجي تارونه",
+      "slug": "raw-silk-fabrics-textile-fibers",
+      "description": "Natural mulberry silk, cashmere wool, cotton yarn, and woven textiles.",
+      "descriptionFa": "ابریشم طبیعی توت، پشم کشمیر، نخ پنبه و منسوجات بافته‌شده.",
+      "descriptionPs": "طبیعي ورېښم، کشمیري وړۍ، د پنبې تار او اوبدل شوي ټوکران.",
+      "order": 2,
+      "isActive": true,
+      "createdAt": "2026-01-10T08:00:00Z",
+      "updatedAt": "2026-01-10T08:00:00Z"
+    },
+    {
+      "id": "sub_pkg_polymers",
+      "companyId": "comp_heka_ltd",
+      "parentId": "cat_packaging_raw_materials",
+      "name": "Polymers, Resins & Chemical Inputs",
+      "nameFa": "پلیمرها، رزین و مواد اولیه کیمیاوی",
+      "namePs": "پولیمر، رزین او کیمیاوي خام مواد",
+      "slug": "polymers-resins-chemical-inputs",
+      "description": "HDPE/LDPE granules, PET preforms, industrial adhesives, and dyes.",
+      "descriptionFa": "گرانول‌های پلی‌اتیلن، پریفرم PET، چسب‌های صنعتی و رنگینه‌های نساجی.",
+      "descriptionPs": "پولي ایتیلین دانې، PET پریفارم، صنعتي سرېښ او نساجي رنګونه.",
+      "order": 3,
+      "isActive": true,
+      "createdAt": "2026-01-10T08:00:00Z",
+      "updatedAt": "2026-01-10T08:00:00Z"
+    },
+    {
+      "id": "cat_other_wholesale",
+      "companyId": "comp_heka_ltd",
+      "parentId": null,
+      "name": "Other Wholesale Products",
+      "nameFa": "سایر محصولات عمده‌فروشی",
+      "namePs": "نور عمده پلور محصولات",
+      "slug": "other-wholesale-products",
+      "description": "Handwoven carpets, artisan crafts, apparel, gemstones, and general wholesale merchandise.",
+      "descriptionFa": "قالین‌های دست‌باف، صنایع دستی، پوشاک، سنگ‌های قیمتی و کالاهای عمده‌فروشی.",
+      "descriptionPs": "لاسي غالۍ، لاسي صنایع، جامې، قیمتي ډبرې او عمومي عمده توکي.",
+      "icon": "Boxes",
+      "order": 6,
+      "isActive": true,
+      "createdAt": "2026-01-10T08:00:00Z",
+      "updatedAt": "2026-01-10T08:00:00Z"
+    },
+    {
+      "id": "sub_oth_handicrafts",
+      "companyId": "comp_heka_ltd",
+      "parentId": "cat_other_wholesale",
+      "name": "Handwoven Carpets & Luxury Handicrafts",
+      "nameFa": "قالین‌های دست‌باف و صنایع دستی لوکس",
+      "namePs": "لاسي غالۍ او لوکس لاسي صنایع",
+      "slug": "handwoven-carpets-luxury-handicrafts",
+      "description": "Afghan wool rugs, silk carpets, copperware, and traditional wood carvings.",
+      "descriptionFa": "قالین‌های پشمی و ابریشمی، ظروف مسی و کنده‌کاری‌های چوبی اصیل.",
+      "descriptionPs": "افغاني وړینې او ورېښمینې غالۍ، مسي لوښي او د لرګیو حکاکی.",
+      "order": 1,
+      "isActive": true,
+      "createdAt": "2026-01-10T08:00:00Z",
+      "updatedAt": "2026-01-10T08:00:00Z"
+    },
+    {
+      "id": "sub_oth_apparel",
+      "companyId": "comp_heka_ltd",
+      "parentId": "cat_other_wholesale",
+      "name": "Wholesale Apparel & Accessories",
+      "nameFa": "پوشاک و لوازم جانبی عمده",
+      "namePs": "عمده جامې او اړوند وسایل",
+      "slug": "wholesale-apparel-accessories",
+      "description": "Scarves, coats, leather goods, and bulk fashion garments.",
+      "descriptionFa": "شال‌ها، چپن و پالتو، محصولات چرمی و البسه عمده.",
+      "descriptionPs": "شالونه، چپنې او کوټونه، څرمني توکي او عمده جامې.",
+      "order": 2,
+      "isActive": true,
+      "createdAt": "2026-01-10T08:00:00Z",
+      "updatedAt": "2026-01-10T08:00:00Z"
+    },
+    {
+      "id": "sub_oth_general",
+      "companyId": "comp_heka_ltd",
+      "parentId": "cat_other_wholesale",
+      "name": "General Trading & Bulk Merchandise",
+      "nameFa": "اموال تجارتی عمومی و کالاهای فله‌ای",
+      "namePs": "عمومي تجارتي او عمده توکي",
+      "slug": "general-trading-bulk-merchandise",
+      "description": "Assorted B2B trade lots, gemstones, and custom export orders.",
+      "descriptionFa": "محموله‌های تجارتی B2B، سنگ‌های قیمتی و سفارشات صادراتی سفارشی.",
+      "descriptionPs": "د B2B تجارتي محمولې، قیمتي ډبرې او ځانګړي صادراتي فرمایشونه.",
+      "order": 3,
+      "isActive": true,
+      "createdAt": "2026-01-10T08:00:00Z",
+      "updatedAt": "2026-01-10T08:00:00Z"
+    }
+  ],
+  "sessions": []
+}

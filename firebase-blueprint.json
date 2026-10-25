@@ -1,0 +1,64 @@
+{
+  "entities": {
+    "Company": {
+      "title": "Company",
+      "description": "Tenant company entity representing an independent business in DukanAI.",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "maxLength": 100 },
+        "slug": { "type": "string", "maxLength": 50, "pattern": "^[a-z0-9\\-]+$" },
+        "industry": { "type": "string", "maxLength": 100 },
+        "country": { "type": "string", "maxLength": 50 },
+        "currency": { "type": "string", "maxLength": 10 },
+        "contactPhone": { "type": "string", "maxLength": 30 },
+        "contactEmail": { "type": "string", "format": "email" },
+        "ownerId": { "type": "string", "maxLength": 128 },
+        "plan": { "type": "string", "enum": ["starter", "growth", "enterprise"] }
+      },
+      "required": ["name", "slug", "ownerId"]
+    },
+    "Product": {
+      "title": "Product",
+      "description": "Product belonging to a specific company tenant.",
+      "type": "object",
+      "properties": {
+        "companyId": { "type": "string", "maxLength": 128 },
+        "name": { "type": "string", "maxLength": 200 },
+        "category": { "type": "string", "maxLength": 50 },
+        "retailPrice": { "type": "number" },
+        "stock": { "type": "number" },
+        "unit": { "type": "string", "maxLength": 20 },
+        "isPublished": { "type": "boolean" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["companyId", "name", "retailPrice"]
+    },
+    "Inquiry": {
+      "title": "CustomerInquiry",
+      "description": "Customer inquiry or wholesale quote request submitted for a company.",
+      "type": "object",
+      "properties": {
+        "companyId": { "type": "string", "maxLength": 128 },
+        "customerName": { "type": "string", "maxLength": 100 },
+        "customerContact": { "type": "string", "maxLength": 100 },
+        "message": { "type": "string", "maxLength": 2000 },
+        "status": { "type": "string", "enum": ["new", "replied", "in_progress", "closed"] }
+      },
+      "required": ["companyId", "message"]
+    }
+  },
+  "firestore": {
+    "/companies/{companyId}": {
+      "schema": { "$ref": "#/entities/Company" },
+      "description": "Stores tenant company profile, settings, and branding."
+    },
+    "/companies/{companyId}/products/{productId}": {
+      "schema": { "$ref": "#/entities/Product" },
+      "description": "Stores catalog items strictly scoped to a tenant company."
+    },
+    "/companies/{companyId}/inquiries/{inquiryId}": {
+      "schema": { "$ref": "#/entities/Inquiry" },
+      "description": "Stores private customer inquiries for a tenant company."
+    }
+  }
+}

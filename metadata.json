@@ -1,0 +1,6 @@
+{
+  "name": "DukanAI – AI Sales Platform",
+  "description": "Multi-tenant SaaS platform for independent online businesses to manage products, public catalogs, customer inquiries, and strictly grounded AI sales replies.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
